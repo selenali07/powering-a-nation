@@ -1,7 +1,163 @@
+@import url(https://fonts.googleapis.com/css?family=Gilda+Display|Share:400,700|Ubuntu:400,500|family=Source+Sans+Pro&display=swap);
 /* Decent Defaults */
-
+:root {
+  --dark-blue: #0d1b2a;
+  --white: #e0e0e0;
+  --light-grey: #80868b;
+  --light-blue: #b0d7ff;
+  --yellow: #e2d4b7;
+}
 img,
 video {
   width: 100%;
   height: auto;
+}
+header {
+  background-color: var(--dark-blue);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85)),
+    url(https://images.unsplash.com/photo-1616398377764-21e50a52e94c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  display: grid;
+}
+h1 {
+  font: Bold 3rem/4.5rem "Unbutu";
+}
+p {
+  font: 1.25rem/1.875rem "Unbutu", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+  margin: 1rem;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font: 1rem/1.5rem "Unbutu", sans-serif;
+}
+.navbar-img {
+  max-width: 15rem;
+  margin: 1rem;
+  padding-left: 1rem;
+}
+
+header section.hero-header {
+  align-self: center;
+  justify-self: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+}
+header section.hero-header .hero-content {
+  padding: 1rem;
+  max-width: 40rem;
+}
+
+header section.hero-header .hero-content h1 {
+  color: var(--light-blue);
+  width: 30rem;
+  margin-bottom: 2rem;
+}
+header section.hero-header .hero-content p {
+  margin-bottom: 3rem;
+}
+.line-x {
+  height: 0.5rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  background-color: white;
+}
+header section.hero-header .hero-content a.read-btn {
+  background: var(--yellow);
+  color: var(--dark-blue);
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font: 1.15rem/1.75rem "Unbutu", sans-serif;
+}
+/*code pen*/
+.faq {
+  background: var(--dark-blue);
+  color: var(--white);
+}
+.title {
+  text-align: left;
+  font: 3rem "Source Sans Pro", sans-serif;
+}
+
+.acc-container {
+  padding: 2rem;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+.acc-btn {
+  width: 100%;
+  padding: 1.6rem 2rem;
+  font: 1.25rem/1.875rem "Source Sans Pro", sans-serif;
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  outline: none;
+  text-align: left;
+  transition: all 0.2s linear;
+  color: var(--white);
+}
+.acc-btn:after {
+  content: "\2303";
+  color: #fa8d0c;
+  float: right;
+  transition: all 0.3s linear;
+  transform: rotate(180deg);
+}
+.acc-btn.is-open:after {
+  transform: rotate(0deg);
+}
+.acc-btn:hover,
+.acc-btn.is-open {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.acc-content {
+  max-height: 0;
+  font: 1rem/1.5rem "Source Sans Pro", sans-serif;
+  margin: 0 2rem;
+  padding-left: 1rem;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-bottom: 1px solid #ccc;
+}
+.acc-content p {
+  margin-bottom: 1rem;
+  color: var(--light-grey);
+}
+.credit {
+  text-align: center;
+  padding: 1rem;
+}
+.credit a {
+  text-decoration: wavy underline;
+  color: dodgerblue;
 }
