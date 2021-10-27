@@ -32,15 +32,24 @@
   <body>
     <header class="hero">
       <nav class="navbar transparent-nav">
+        <div class="hamburger-menu hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <a href="./" class="navbar-img"
           ><img src="./img/logo.svg" alt="pro republica"
         /></a>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./article.html">Article</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resources.html">Resources</a></li>
-        </ul>
+        <div class="overlay">
+          <div class="overlay-content">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./article.html">Article</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./resources.html">Resources</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <section class="hero-header">
         <div class="hero-content">
@@ -65,13 +74,13 @@
         <section class="related">
           <h1 class="title">Related Articles</h1>
           <ul class="cards">
-            <li class="cards_item">
+            <li class="cards-item">
               <div class="card">
                 <div class="card_image">
                   <img src="./img/shoreline-house.jpeg" alt="beach house" />
                 </div>
-                <div class="card_content">
-                  <h2 class="card_title">
+                <div class="card-content">
+                  <h2 class="card-title">
                     Obama and the Beach House Loopholes
                   </h2>
                   <a
@@ -83,13 +92,13 @@
                 </div>
               </div>
             </li>
-            <li class="cards_item">
+            <li class="cards-item">
               <div class="card">
                 <div class="card_image">
                   <img src="./img/house.jpeg" alt="house in hawaii" />
                 </div>
-                <div class="card_content">
-                  <h2 class="card_title">
+                <div class="card-content">
+                  <h2 class="card-title">
                     Wealthy Homeowners Are Endangering Hawaii’s Beaches
                   </h2>
                   <a
@@ -101,13 +110,13 @@
                 </div>
               </div>
             </li>
-            <li class="cards_item">
+            <li class="cards-item">
               <div class="card">
                 <div class="card_image">
                   <img src="./img/house2.jpeg" alt="house in hawaii" />
                 </div>
-                <div class="card_content">
-                  <h2 class="card_title">
+                <div class="card-content">
+                  <h2 class="card-title">
                     Hawaii’s Waterfront Homeowners Damage Public Beaches Again
                   </h2>
                   <a
@@ -126,12 +135,12 @@
     </main>
     <footer class="footer">
       <ul class="social-icon">
-        <li class="social-icon__item">
+        <li class="social-icon-item">
           <a class="social-icon-link fab fa-linkedin" href="#">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
-        <li class="social-icon__item">
+        <li class="social-icon-item">
           <a class="social-icon-link fab fa-github" href="#">
             <ion-icon name="logo-github"></ion-icon>
           </a>

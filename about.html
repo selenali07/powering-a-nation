@@ -6,52 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <!--Font Awesome Icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--jQuery CDN-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/main.js" defer></script>
+    <script src="./js/faq.js" defer></script>
+
     <title>About | Powering a Nation</title>
   </head>
-  <body>
+  <body id="about">
     <header class="about-header">
-      <nav class="navbar">
+      <nav class="navbar nav-dark">
+        <div class="hamburger-menu hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <a href="./" class="navbar-img"
-          ><img src="./img/logo.svg" alt="pro republica"
+          ><img src="./img/logo-black.svg" alt="pro republica"
         /></a>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./article.html">Article</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resources.html">Resources</a></li>
-        </ul>
+        <div class="overlay">
+          <div class="overlay-content">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./article.html">Article</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./resources.html">Resources</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <article class="about-container">
         <section class="about-header-content">
-          <h1>Hawaii’s Beaches Are Disappearing</h1>
-          <p>
-            If your knees aren't green by the end of the day, you ought to
-            seriously re-examine your life.
-          </p>
+          <div class="left-half">
+            <div class="line-x"></div>
+            <h1>About</h1>
+            <p>
+              The loss of Hawaii’s beaches threatens the way of life in the
+              islands and imperils the state’s tourist-driven economy. But the
+              environmental damage of coastal armoring is already clear.
+              Endangered species, like monk seals, have lost critical shoreline
+              habitat. If Hawaii doesn’t step up enforcement of its “no
+              tolerance” policy toward shoreline structures, scientists warn
+              that, by midcentury, the state could be down to just a handful of
+              healthy beaches.
+            </p>
+          </div>
+          <div class="right-half"></div>
         </section>
       </article>
     </header>
-    <main>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/e3ZYaL0Q9os"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <hr />
+    <main class="main-container">
+      <article class="iframe">
+        <section>
+          <div class="line-x"></div>
+          <h1 class="title">The problem with beach restoration</h1>
+          <p>
+            The data was compiled from public records requests filed with
+            Hawaii’s Department of Land and Natural Resources and the City and
+            County of Honolulu’s Department of Planning and Permitting. The
+            records include state approvals for seawall easements and emergency
+            sandbags, as well as county approvals for new or illegally
+            constructed seawalls. The documents cover approvals issued between
+            2000 and 2020.
+          </p>
+        </section>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/e3ZYaL0Q9os"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </article>
+      <article class="faq">
+        <section class="acc-container">
+          <h1 class="title">FAQ</h1>
+          <button class="acc-btn">What is the definition of a will?</button>
+          <div class="acc-content">
+            <p>It is a dead giveaway.</p>
+          </div>
+
+          <button class="acc-btn">
+            What happens to chemists when they die?
+          </button>
+          <div class="acc-content">
+            <p>We barium [bury them].</p>
+          </div>
+
+          <button class="acc-btn">
+            What’s the connection between coal and electricity?
+          </button>
+          <div class="acc-content">
+            <p>
+              Nearly 50 percent of U.S. electricity comes from coal. Coal-fired
+              power plants burn coal to generate steam, which is used to turn
+              the turbines of an electrical generator. The U.S. has one of the
+              largest coal reserves in the world and burns it at about 600
+              plants across the nation. Generating electricity from coal is
+              common in the South and in the heartland, but less often used in
+              regions such as the West Coast, where hydroelectricity and natural
+              gas are bigger sources of power.
+            </p>
+          </div>
+
+          <button class="acc-btn">
+            If coal is so important to electricity generation, why are some
+            people concerned about building new coal-fired power plants?
+          </button>
+          <div class="acc-content">
+            <p>
+              Coal plants emit carbon dioxide, a major ingredient in climate
+              change. In recent years, NASA climate scientist James Hansen has
+              advocated a moratorium on building new coal plants until
+              technology is developed to prevent the carbon dioxide from
+              escaping into the atmosphere. Hansen has warned that continuing to
+              release carbon dioxide at current rates – even just for the next
+              10 years – will create “a different planet – one without sea ice
+              in the Arctic; with worldwide, repeated coastal tragedies
+              associated with storms and a continuously rising sea level.” The
+              proposed American Municipal Power plant in Meigs County would
+              release an estimated 5.5 million tons of carbon dioxide annually,
+              according to CARMA, a nonprofit group.
+            </p>
+          </div>
+
+          <button class="acc-btn">
+            Why are there so many electricity-generating coal plants near Meigs
+            County?
+          </button>
+          <div class="acc-content">
+            <p>
+              Coal has been a dominant industry for most of the region’s
+              history. The county’s newest mine began producing coal last
+              February.
+            </p>
+          </div>
+        </section>
+      </article>
     </main>
     <footer class="footer">
       <ul class="social-icon">
-        <li class="social-icon__item">
+        <li class="social-icon-item">
           <a class="social-icon-link fab fa-linkedin" href="#">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
-        <li class="social-icon__item">
+        <li class="social-icon-item">
           <a class="social-icon-link fab fa-github" href="#">
             <ion-icon name="logo-github"></ion-icon>
           </a>
