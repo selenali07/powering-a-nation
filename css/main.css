@@ -376,7 +376,7 @@ main.main-container article.iframe {
   margin: 0 auto;
   flex-direction: row-reverse;
 }
-@media screen and (max-width: 61.9375rem) {
+@media screen and (max-width: 47.9375rem) {
   main.main-container article.iframe {
     flex-direction: column-reverse;
   }
@@ -431,7 +431,7 @@ header.about-header h1 {
   padding: 1rem;
   height: 100vh;
 }
-@media screen and (max-width: 61.9375rem) {
+@media screen and (max-width: 47.9375rem) {
   .about-header-content {
     flex-direction: column-reverse;
     height: 100vh;
@@ -607,7 +607,7 @@ article.article-container .article-content figure figcaption {
 .icon-bar {
   display: none;
 }
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 48rem) {
   .icon-bar {
     display: none;
     position: fixed;
