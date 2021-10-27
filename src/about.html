@@ -10,13 +10,54 @@
     <title>About | Powering a Nation</title>
   </head>
   <body>
-    <nav>
-      <a href="./">Home</a>
-      <ul>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./coal.html">Coal</a></li>
-        <li><a href="./wind.html">Wind</a></li>
+    <header class="about-header">
+      <nav class="navbar">
+        <a href="./" class="navbar-img"
+          ><img src="./img/logo.svg" alt="pro republica"
+        /></a>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./article.html">Article</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <article class="about-container">
+        <section class="about-header-content">
+          <h1>Hawaii’s Beaches Are Disappearing</h1>
+          <p>
+            If your knees aren't green by the end of the day, you ought to
+            seriously re-examine your life.
+          </p>
+        </section>
+      </article>
+    </header>
+    <main>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/e3ZYaL0Q9os"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <hr />
+    </main>
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon-link fab fa-linkedin" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon-link fab fa-github" href="#">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
       </ul>
-    </nav>
+      <p>&copy;2021 Pro Republica | Mejo 187 | All Rights Reserved</p>
+    </footer>
   </body>
 </html>

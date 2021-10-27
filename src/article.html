@@ -4,59 +4,310 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Font Awesome Icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--jQuery CDN-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
+    <script src="./js/icons.js" defer></script>
+
     <title>Powering a Nation</title>
   </head>
   <body>
-    <nav>
-      <a href="./">Home</a>
-      <ul>
-        <li><a href="./article.html">Article</a></li>
-        <li><a href="./coal.html">FAQ</a></li>
-        <li><a href="./wind.html">Resources</a></li>
+    <header class="article-header">
+      <nav class="navbar nav-dark">
+        <a href="./" class="navbar-img"
+          ><img src="./img/logo-black.svg" alt="pro republica"
+        /></a>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./article.html">Article</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="article-main">
+      <section class="icon-bar">
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="google"><i class="fab fa-google"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+      </section>
+      <article class="article-container">
+        <section>
+          <h1>Hawaii’s Beaches Are Disappearing</h1>
+          <p class="article-summary">
+            Hawaii is famous for its spectacular beaches. But over the past
+            century, three of the state’s major islands, Oahu, Maui and Kauai,
+            have lost roughly one-quarter of their sandy shores.
+          </p>
+          <address>
+            by Ash Ngu, ProPublica, and Sophie Cocke, Honolulu Star-Advertiser,
+          </address>
+          <time datetime="2020-12-29T21:20:26-04:00"
+            ><span class="css-1sbuyqj e16638kd3">December 29, 2020.</span>
+          </time>
+          <section class="social">
+            <ul class="social-toolbar">
+              <li>
+                <a
+                  class="sociali"
+                  href="#"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook fa-fw" title="Facebook"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="sociali"
+                  href="#"
+                  target="_blank"
+                  aria-label="Twitter"
+                >
+                  <i class="fab fa-twitter fa-fw" title="Twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a class="sociali" href="#" target="_blank" aria-label="Google">
+                  <i class="fab fa-google fa-fw" title="Google"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="sociali"
+                  href="#"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin fa-fw" title="LinkedIn"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="sociali"
+                  href="#"
+                  target="_blank"
+                  aria-label="YouTube"
+                >
+                  <i class="fab fa-youtube fa-fw" title="YouTube"></i
+                ></a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <hr />
+        <section class="article-content">
+          <section class="disclosure">
+            <p>
+              <em
+                >ProPublica is a nonprofit newsroom that investigates abuses of
+                power. Sign up to receive our
+                <a
+                  target="_blank"
+                  href="https://www.propublica.org/newsletters/the-big-story?source=www.propublica.org&amp;placement=top-note&amp;region=local-reporting-network"
+                  >biggest stories</a
+                >
+                as soon as they’re published.</em
+              >
+            </p>
+            <p>
+              <em
+                >This article was produced in partnership with the Honolulu
+                Star-Advertiser, which is a member of the
+                <a
+                  href="https://www.propublica.org/local-reporting-network/"
+                  target="_blank"
+                  >ProPublica Local Reporting Network</a
+                >.</em
+              >
+            </p>
+          </section>
+          <p>
+            Hawaii’s beaches are owned by the public, and the government is
+            required to preserve them. So years ago, officials adopted a “no
+            tolerance” policy toward new seawalls, which scientists say are the
+            primary cause of coastal erosion.
+          </p>
+          <p>
+            But over the past two decades, oceanfront property owners across the
+            state have used an array of loopholes in state and county laws to
+            get around that policy, armoring their own properties at the expense
+            of the environment and public shoreline access.
+          </p>
+          <p>
+            Government officials have granted more than 230 environmental
+            exemptions to owners of homes, hotels and condos, according to
+            records compiled by the Honolulu Star-Advertiser and ProPublica.
+            Those exemptions have allowed property owners to keep old seawalls
+            in place, build new ones and install mounds of emergency sandbags
+            along the beaches.
+          </p>
+          <p></p>
+          <figure>
+            <img
+              alt="Hawaii shore picture 1"
+              src="./img/shore1.jpeg"
+              sizes="((min-width: 37.5rem) and (max-width: 52.5)) 84vw, (min-width: 62.51) 60vw, 100vw"
+              width="600"
+              height="400"
+              style="cursor: pointer"
+            />
+            <figcaption>
+              Oahu's Lanikai Beach has suffered some of the most rapid beach
+              loss, almost entirely due to seawalls. This is what the beach
+              looked like in 1968, following a surge of home development along
+              its shore in the earlier half of the century.
+            </figcaption>
+          </figure>
+          <p>
+            Officials defend their actions, saying that forcing property owners
+            to comply with anti-armoring laws would cause them too much
+            hardship, particularly along coastlines that already have lots of
+            seawalls.
+          </p>
+          <p>
+            Over time, though, waves hitting the barriers pull the sand away
+            from the shore and carry it out to sea. As a result, the government
+            approvals have fueled beach loss and perpetuated the redevelopment
+            of private properties along treasured and environmentally sensitive
+            coastlines — all at a time when scientists have been warning of the
+            dire need to push development inland.
+          </p>
+          <p>
+            In the 1980s, homeowners increasingly built seawalls to protect
+            their properties from the ocean, setting off a domino effect of
+            erosion. That armoring has continued, despite the "no tolerance"
+            policy set in 1999. Officials have continually allowed people to
+            build new seawalls and reconstruct older, crumbling ones while
+            approving illegally built structures after the fact.
+          </p>
+          <figure>
+            <img
+              alt="Hawaii shore picture 2"
+              src="./img/shore2.jpeg"
+              sizes="((min-width: 37.5rem) and (max-width: 52.5)) 84vw, (min-width: 62.51) 60vw, 100vw"
+              width="600"
+              height="400"
+              style="cursor: pointer"
+            />
+            <figcaption>
+              While seawalls have destroyed much of the public beach, the homes
+              along this stretch of coastline continue to sell for millions of
+              dollars as real estate agents boast of their private, oceanfront
+              locations. Luxury homes listed for sale this year ranged in price
+              from $4.9 million to $15.6 million.
+            </figcaption>
+          </figure>
+          <p>
+            This wall of boulders at 1562 Mokulua Drive was built without
+            approval. Despite the violation, officials with the City and County
+            of Honolulu issued building permits in 2009 to the owner, allowing
+            her to redevelop the property into a sprawling, luxury estate, which
+            in 2015 sold for $9.35 million — more than double its 2006 sales
+            price.
+          </p>
+          <p>
+            If a seawall is significantly damaged or destroyed, state and county
+            laws limit what property owners can do to repair it. But officials
+            have been lenient in their approach to enforcement, ensuring
+            shorelines like Lanikai remain fixed in place and armored for
+            decades to come. This wall at 1368 Mokulua Drive was largely
+            destroyed during a storm in 2003, but the owner was allowed to
+            rebuild it.
+          </p>
+          <p>
+            Owners have also found a loophole by getting approvals for temporary
+            sandbags but then keeping the structures indefinitely. The sandbags
+            at 1326 Mokulua Drive have been sitting on the beach since the
+            1990s, after the previous owner was required to tear out an illegal
+            seawall. This year, the City and County of Honolulu approved a new
+            seawall.
+          </p>
+          <p>
+            Old seawalls like this one at 1240 Mokulua Drive were built before
+            Hawaii established coastal protection laws in the 1960s. In 2003,
+            the property was purchased for $6 million and the new owner sought
+            an easement to keep the wall in place for an additional 55 years.
+            State officials gave their approval, which allowed the owner to
+            redevelop the estate. Earlier this year, it was listed for sale for
+            $21 million.
+          </p>
+          <figure>
+            <img
+              alt="Hawaii shore picture 3"
+              src="./img/shore3.jpeg"
+              sizes="((min-width: 37.5rem) and (max-width: 52.5)) 84vw, (min-width: 62.51) 60vw, 100vw"
+              width="600"
+              height="400"
+              style="cursor: pointer"
+            />
+            <figcaption>
+              After the stretch of seawalled coastline, the beach reemerges.
+              While this part of the shore has undergone a period of natural
+              growth, scientists warn that erosion from the southern seawalls
+              could eat away at this part of the beach too. Owners of the
+              profiled properties declined or did not respond to requests for
+              comment.
+            </figcaption>
+          </figure>
+          <p>
+            On Oahu, where the majority of the state’s population lives, the
+            ocean is threatening to damage or wash away hundreds of structures,
+            including roads, hotels and homes. Owners looking to protect their
+            properties have obtained seawall easements extending the life of
+            walls, permits for emergency sandbags and county seawall approvals.
+          </p>
+          <p>
+            In one case, officials allowed owners of an estate tied to former
+            President Barack Obama to exploit loopholes in Hawaii's
+            environmental laws to revamp its aging seawall. The owners said they
+            needed exemptions to protect the compound from the ocean and pursued
+            them lawfully.
+          </p>
+          <p>
+            Particulate pollution and turbulence caused by waves slamming into
+            seawalls has harmed already-stressed coral reefs and threatens to
+            disrupt the islands’ famous surf breaks. The loss of Hawaii’s
+            beaches threatens the way of life in the islands and imperils the
+            state’s tourist-driven economy.
+          </p>
+        </section>
+      </article>
+      <hr />
+    </main>
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item"></li>
+        <li class="social-icon__item">
+          <a class="social-icon-link fab fa-linkedin" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon-link fab fa-github" href="#">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
       </ul>
-    </nav>
+      <p>&copy;2021 Pro Republica | Mejo 187 | All Rights Reserved</p>
+    </footer>
   </body>
-  <main>
-    <p>
-      Hawaii’s beaches are owned by the public, and the government is required
-      to preserve them. So years ago, officials adopted a “no tolerance” policy
-      toward new seawalls, which scientists say are the primary cause of coastal
-      erosion.
-    </p>
-    <p>
-      But over the past two decades, oceanfront property owners across the state
-      have used an array of loopholes in state and county laws to get around
-      that policy, armoring their own properties at the expense of the
-      environment and public shoreline access.
-    </p>
-    <p>
-      Government officials have granted more than 230 environmental exemptions
-      to owners of homes, hotels and condos, according to records compiled by
-      the Honolulu Star-Advertiser and ProPublica. Those exemptions have allowed
-      property owners to keep old seawalls in place, build new ones and install
-      mounds of emergency sandbags along the beaches.
-    </p>
-    <p>
-      <span id="jump-btn"
-        ><i class="fa fa-map-marked"></i>Explore the last 20 years of shoreline
-        exemptions in Hawaii →</span
-      >
-    </p>
-    <p>
-      Officials defend their actions, saying that forcing property owners to
-      comply with anti-armoring laws would cause them too much hardship,
-      particularly along coastlines that already have lots of seawalls.
-    </p>
-    <p>
-      Over time, though, waves hitting the barriers pull the sand away from the
-      shore and carry it out to sea. As a result, the government approvals have
-      fueled beach loss and perpetuated the redevelopment of private properties
-      along treasured and environmentally sensitive coastlines — all at a time
-      when scientists have been warning of the dire need to push development
-      inland.
-    </p>
-  </main>
 </html>
