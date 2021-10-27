@@ -23,6 +23,7 @@ header {
   background-size: cover;
   background-position: bottom;
   height: 100vh;
+  width: auto;
 }
 header.about-header {
   background: var(--dark-blue);
@@ -69,7 +70,17 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font: 1rem/1.5rem "Unbutu", sans-serif;
+  font: 1.25rem/1.875rem "Unbutu", sans-serif;
+}
+nav ul li a:hover {
+  font-weight: bold;
+  color: var(--light-blue);
+}
+nav.nav-dark ul li a:hover {
+  color: black;
+  border-bottom: 0.25rem var(--light-blue) solid;
+  padding-bottom: 0.1rem;
+  border-radius: 0.25rem;
 }
 nav.nav-dark {
   background-color: white;
@@ -168,9 +179,8 @@ header section.hero-header .hero-content a.read-btn {
 
 .btn {
   color: #000;
-  padding: 0.8rem;
+  padding: 1rem;
   font-size: 1rem;
-  text-transform: uppercase;
   border-radius: 0.25rem;
   font-weight: 400;
   display: block;
@@ -178,7 +188,9 @@ header section.hero-header .hero-content a.read-btn {
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
-  text-align: right;
+  text-align: center;
+  font-family: "Unbutu";
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -231,12 +243,13 @@ header section.hero-header .hero-content a.read-btn {
 
 .card-title {
   color: #000;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   margin: 0;
 }
 
-/*code pen*/
+/*faq*/
 .faq {
   background: var(--dark-blue);
   color: var(--white);
@@ -380,6 +393,9 @@ main.main-container article.iframe {
   main.main-container article.iframe {
     flex-direction: column-reverse;
   }
+  #down-indicator {
+    display: none;
+  }
 }
 main.main-container article.sources {
   background: white;
@@ -405,6 +421,7 @@ main.main-container article.iframe h1 {
 main.main-container hr {
   background: white;
 }
+
 header.about-header h1 {
   margin: 1rem 0 !important;
 }
@@ -430,6 +447,9 @@ header.about-header h1 {
   flex: 1;
   padding: 1rem;
   height: 100vh;
+}
+.left-half h1 {
+  color: var(--light-blue);
 }
 @media screen and (max-width: 47.9375rem) {
   .about-header-content {
