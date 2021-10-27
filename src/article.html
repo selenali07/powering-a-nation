@@ -30,15 +30,24 @@
   <body>
     <header class="article-header">
       <nav class="navbar nav-dark">
+        <div class="hamburger-menu hide-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <a href="./" class="navbar-img"
           ><img src="./img/logo-black.svg" alt="pro republica"
         /></a>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./article.html">Article</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./resources.html">Resources</a></li>
-        </ul>
+        <div class="overlay">
+          <div class="overlay-content">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./article.html">Article</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./resources.html">Resources</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main class="article-main">
@@ -295,13 +304,13 @@
     </main>
     <footer class="footer">
       <ul class="social-icon">
-        <li class="social-icon__item"></li>
-        <li class="social-icon__item">
+        <li class="social-icon-item"></li>
+        <li class="social-icon-item">
           <a class="social-icon-link fab fa-linkedin" href="#">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
-        <li class="social-icon__item">
+        <li class="social-icon-item">
           <a class="social-icon-link fab fa-github" href="#">
             <ion-icon name="logo-github"></ion-icon>
           </a>
