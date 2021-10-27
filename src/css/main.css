@@ -532,7 +532,7 @@ header.about-header h1 {
     overflow-x: hidden;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.95);
     color: white;
     backdrop-filter: blur(0.5rem);
     transition: all 0.5s ease;
