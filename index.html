@@ -25,8 +25,9 @@
 
     <script src="./js/main.js" defer></script>
     <script src="./js/scroll-position.js" defer></script>
+    <script src="./js/scroll.js"></script>
 
-    <title>Hawaii’s Beaches Are Disappearing</title>
+    <title>Home | Hawaii’s Beaches Are Disappearing</title>
   </head>
 
   <body>
@@ -46,7 +47,7 @@
               <li><a href="./index.html">Home</a></li>
               <li><a href="./article.html">Article</a></li>
               <li><a href="./about.html">About</a></li>
-              <li><a href="./resources.html">Resources</a></li>
+              <li><a href="./sources.html">Sources</a></li>
             </ul>
           </div>
         </div>
@@ -70,78 +71,107 @@
       </section>
     </header>
     <main id="content">
-      <article>
-        <section class="related">
-          <h1 class="title">Related Articles</h1>
-          <ul class="cards">
-            <li class="cards-item">
-              <div class="card">
-                <div class="card_image">
-                  <img src="./img/shoreline-house.jpeg" alt="beach house" />
-                </div>
-                <div class="card-content">
-                  <h2 class="card-title">
-                    Obama and the Beach House Loopholes
-                  </h2>
-                  <a
-                    href="https://www.propublica.org/article/obama-and-the-beach-house-loopholes"
-                    class="btn card-btn"
-                    target="_blank"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="cards-item">
-              <div class="card">
-                <div class="card_image">
-                  <img src="./img/house.jpeg" alt="house in hawaii" />
-                </div>
-                <div class="card-content">
-                  <h2 class="card-title">
-                    Wealthy Homeowners Are Endangering Hawaii’s Beaches
-                  </h2>
-                  <a
-                    href="https://www.propublica.org/article/how-famous-surfers-and-wealthy-homeowners-are-endangering-hawaiis-beaches"
-                    class="btn card-btn"
-                    target="_blank"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </li>
-            <li class="cards-item">
-              <div class="card">
-                <div class="card_image">
-                  <img src="./img/house2.jpeg" alt="house in hawaii" />
-                </div>
-                <div class="card-content">
-                  <h2 class="card-title">
-                    Hawaii’s Waterfront Homeowners Damage Public Beaches Again
-                  </h2>
-                  <a
-                    href="https://www.staradvertiser.com/2020/12/31/hawaii-news/paradise-lost-officials-let-hawaiis-waterfront-homeowners-damage-public-beaches-again-and-again/"
-                    class="btn card-btn"
-                    target="_blank"
-                    >Read More</a
-                  >
-                </div>
-              </div>
-            </li>
-          </ul>
+      <section class="intro">
+        <section>
+          <p>
+            Despite the "no tolerance" policy set in 1999. Officials have
+            continually allowed people to build new seawalls and reconstruct
+            older, crumbling ones while approving illegally built structures
+            after the fact.
+          </p>
         </section>
-      </article>
+        <section>
+          <p>
+            Seawalls erode Hawaii’s beaches, but the state has been lax about
+            approving them and disorganized about enforcing the law. Officials
+            now pledge action, after a Honolulu Star-Advertiser and ProPublica
+            investigation.
+          </p>
+        </section>
+      </section>
+      <section class="intro-vid">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/SZOB8_HQJKE"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="article-quote">
+        <blockquote>
+          The loss of Hawaii’s beaches threatens the way of life in the islands
+          and imperils the state’s tourist-driven economy.
+        </blockquote>
+        <cite>- Pro Republica</cite>
+      </section>
+      <div class="gallery-container">
+        <h2 class="title">Gallery</h2>
+        <section class="gallery">
+          <figure class="gallery-item">
+            <img
+              class="gallery-image"
+              src="./img/shore1.jpeg"
+              alt="oahu shore"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-image"
+              src="./img/shore2.jpeg"
+              alt="shoreline"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-image"
+              src="./img/shore3.jpeg"
+              alt="eroding shore"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-image"
+              src="./img/shoreline-house.jpeg"
+              alt="Hawaii house"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-image"
+              src="./img/house.jpeg"
+              alt="Hawaii house 2"
+            />
+          </figure>
+          <figure class="gallery-item">
+            <img
+              class="gallery-image"
+              src="./img/house2.jpeg"
+              alt="Hawaii house 3"
+            />
+          </figure>
+        </section>
+      </div>
       <hr />
     </main>
     <footer class="footer">
       <ul class="social-icon">
         <li class="social-icon-item">
-          <a class="social-icon-link fab fa-linkedin" href="#">
+          <a
+            class="social-icon-link fab fa-linkedin"
+            href="https://www.linkedin.com/in/selenali07/
+"
+          >
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>
         <li class="social-icon-item">
-          <a class="social-icon-link fab fa-github" href="#">
+          <a
+            class="social-icon-link fab fa-github"
+            href="https://github.com/selenali07"
+          >
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </li>
@@ -149,25 +179,4 @@
       <p>&copy;2021 Pro Republica | Mejo 187 | All Rights Reserved</p>
     </footer>
   </body>
-  <script src="./js/scroll.js"></script>
-
-  <script>
-    const btns = document.querySelectorAll(".acc-btn");
-
-    // fn
-    function accordion() {
-      // this = the btn | icon & bg changed
-      this.classList.toggle("is-open");
-
-      // the acc-content
-      const content = this.nextElementSibling;
-
-      // IF open, close | else open
-      if (content.style.maxHeight) content.style.maxHeight = null;
-      else content.style.maxHeight = content.scrollHeight + "px";
-    }
-
-    // event
-    btns.forEach((el) => el.addEventListener("click", accordion));
-  </script>
 </html>
