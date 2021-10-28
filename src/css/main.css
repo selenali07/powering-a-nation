@@ -267,6 +267,9 @@ cite {
   color: var(--white);
   padding: 2rem 0;
 }
+.faq .title {
+  color: var(--light-blue);
+}
 .title {
   text-align: center;
   font: 2.75rem "Source Sans Pro", sans-serif;
@@ -359,21 +362,6 @@ cite {
 }
 .social-icon-link:hover {
   transform: translateY(-0.8rem);
-}
-
-.menu__link {
-  font-size: 1.2rem;
-  color: #000;
-  margin: 0 10px;
-  display: inline-block;
-  transition: 0.5s;
-  text-decoration: none;
-  opacity: 0.75;
-  font-weight: 300;
-}
-
-.menu__link:hover {
-  opacity: 1;
 }
 
 .footer p {
@@ -828,7 +816,6 @@ main#sources article.card-grid span {
   }
 }
 /*END cards section*/
-
 main article.sources ol,
 main article.sources li {
   margin: 0;
